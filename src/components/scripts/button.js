@@ -18,7 +18,7 @@ function CenteredButton({ _props }) {
         let web3 = new Web3(window.ethereum);
         return new web3.eth.Contract(
             TokenDistributor[0].abi,
-            TokenDistributor[0].networks["80001"].address
+            TokenDistributor[0].networks["137"].address
         )
     },[]);
 
