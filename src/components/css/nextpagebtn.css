@@ -1,0 +1,38 @@
+.nextpagebtn{
+    grid-column: 2;
+    padding: 3px;
+    grid-row: 1;
+    width: 3vw;
+    min-width: 3vw;
+    height: auto; /* Changed to maintain aspect ratio */
+    border-radius: 10px;
+    background-color: rgb(112, 87, 137);
+    background-size: cover; /* Cover the entire area of the grid item */
+    background-position: center; /* Center the background image */
+}
+
+.nextpagecomponent{
+    display: grid;  
+    grid-template-columns: 7fr,3fr;
+    gap: 10px; 
+}
+
+h3{
+    padding: 3px;
+    grid-column: 1;
+    color: rgb(181, 181, 181);
+    text-align: center;
+    text-shadow: 0 0 8px #666, 0 0 16px #666, 0 0 24px #666;
+    animation: glow 1.5s ease-in-out infinite alternate;
+    display: flex;
+  }
+  
+  /* Animation Keyframes */
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 8px #666, 0 0 16px #666, 0 0 24px #666;
+    }
+    to {
+      text-shadow: 0 0 8px #999, 0 0 16px #999, 0 0 24px #999;
+    }
+  }

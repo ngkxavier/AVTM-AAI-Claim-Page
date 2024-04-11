@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState, useEffect, useMemo } from 'react';
 import Web3 from 'web3';
-import '../css/button.css'; // Make sure the CSS file is in the same directory
+import '../css/avtm3k.css'; // Make sure the CSS file is in the same directory
 
 import { TokenDistributor } from '../../abi/TokenDistributor';
 

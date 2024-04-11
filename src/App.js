@@ -1,12 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
 import './components/css/background1.css';
 
 //React Stuff
-import React, { useState, useEffect, Component } from 'react';
+import React, { Component } from 'react';
 
 //My Components
-import CenteredButton from './components/scripts/button';
+import PromptBg from './components/scripts/promptbg.js';
 import Background1 from './components/scripts/background1.js';
 import NavbarComponent from './components/scripts/NavBar.js';
 import Title from './components/scripts/title.js';
@@ -54,7 +53,7 @@ class App extends Component {
       await new Promise(resolve => setTimeout(resolve, 100));
     }
 
-    let web3Instance = this.state.web3;
+
 
     const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
     this.setState({UserWalletAddress : accounts[0]});
@@ -69,7 +68,7 @@ class App extends Component {
         <Background1/>
         <NavbarComponent props={this.state} />
         <Title/>
-        <CenteredButton _props={this.state}/>
+        <PromptBg _props={this.state}/>
       </div>
 
     )

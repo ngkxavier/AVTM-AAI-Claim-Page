@@ -1,11 +1,4 @@
 /* Base container styles */
-.convert-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80vh;
-  padding-bottom: 12rem;
-}
 
 .prompt-container {
   display: grid;
@@ -15,7 +8,7 @@
   align-items: center;
   width: 70vw;
   height: 80vh;
-  padding: 1em;
+  padding: 1vw;
   margin: 3rem auto;
   background: linear-gradient(to right, rgba(72, 1, 126, 0.45), rgba(24, 0, 94, 0.45));
   border-radius: 2rem;
@@ -78,10 +71,11 @@ h2 {
 
 .images {
   grid-row: 1;
-  width: 100%;
+  width: 13vw;
   height: auto; /* Changed to maintain aspect ratio */
   object-fit: cover;
   border-radius: 10px;
+  
 }
 
 /* Arrow Styles */
@@ -135,3 +129,12 @@ h2 {
 .centered-button:hover {
   background-color: #b73bff;
 }
+
+
+/*Next Page button*/
+.nextpagebtn-container{
+  grid-row: 4;
+  grid-column: 5;
+}
+
+
