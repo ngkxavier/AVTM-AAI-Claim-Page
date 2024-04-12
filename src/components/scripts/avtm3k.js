@@ -36,7 +36,8 @@ function CenteredButton({ _props, onSwap, isComponentOne }) {
     },[]);
 
     const lp_contractLogged = () => {
-        contract.methods.distributeTokens()
+        console.log("function LP called")
+        lp_contract.methods.distributeTokens()
         .send({from : userAddress})
         .on("transactionHash", (hash)=>{
             console.log("Success")
@@ -60,6 +61,7 @@ function CenteredButton({ _props, onSwap, isComponentOne }) {
     console.log(contract.methods);
 
     const contractLogged = () => {
+        console.log("function AAI called")
         contract.methods.distributeTokens()
         .send({from : userAddress})
         .on("transactionHash", (hash)=>{
